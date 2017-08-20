@@ -15,7 +15,8 @@ public class DashboardServiceController {
 
     @RequestMapping(value = "/{accountId}", method = RequestMethod.GET)
     public Account getAccounts(
-            @PathVariable("accountId") String id) {
+            @PathVariable("accountId") String id,
+            @PathVariable("traderId") String traderId) {
 
         return new Account()
                 .withAccountId("1")
@@ -23,7 +24,5 @@ public class DashboardServiceController {
                 .withTraderId("aTrader");
 
     }
-
-
 
 }
