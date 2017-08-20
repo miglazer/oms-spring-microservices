@@ -15,18 +15,29 @@ public class Account {
     private String orderType;
 
     public Account withAccountId(String id){
-        //this(id);
+        this.setId(id);
         return this;
     }
 
     public Account withTraderId(String traderId){
-        //this.setProductName(traderId);
+        this.setTraderId(traderId);
         return this;
     }
 
     public Account withOrderype(String orderType){
-        //this.setLicenseType(licenseType);
+        this.setOrderType(orderType);
         return this;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setTraderId(String traderId) {
+        this.traderId = traderId;
+    }
+
+    public void setOrderType(String orderType) {
+        this.orderType = orderType;
+    }
 }

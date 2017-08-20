@@ -17,7 +17,10 @@ public class DashboardServiceController {
     public Account getAccounts(
             @PathVariable("accountId") String id) {
 
-        return new Account();
+        return new Account()
+                .withAccountId("1")
+                .withOrderype("Equity")
+                .withTraderId("aTrader");
 
     }
 
